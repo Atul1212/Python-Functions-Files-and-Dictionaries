@@ -2,6 +2,7 @@
 week 1 assigment
 1>The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total number of characters in the file and save to the variable num.
 program:-
+   
    fileref = open("travel_plans.txt","r")
 num = 0
 for i in fileref:
@@ -23,13 +24,16 @@ fileref.close()
 
 3>Assign to the variable num_lines the number of lines in the file school_prompt.txt.
 programe:-
-   num_lines = sum(1 for line in open('school_prompt.txt'))
+  
+  num_lines = sum(1 for line in open('school_prompt.txt'))
    
    
   
   
 4>Assign the first 30 characters of school_prompt.txt as a string to the variable beginning_chars.
   programe:-
+      
+      
       f = open('school_prompt.txt', 'r')
 beginning_chars = f.read(30)
 print(beginning_chars)
@@ -39,7 +43,9 @@ print(beginning_chars)
 5>Challenge: Using the file school_prompt.txt, assign the third word of every line to a list called three
 
 programe:
-    three = []
+    
+    
+   three = []
 
 with open('school_prompt.txt', 'r') as f:
     three = [line.split()[2] for line in f]
