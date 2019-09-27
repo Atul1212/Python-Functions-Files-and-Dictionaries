@@ -25,7 +25,7 @@ fileref.close()
 3>Assign to the variable num_lines the number of lines in the file school_prompt.txt.
 programe:-
   
-  num_lines = sum(1 for line in open('school_prompt.txt'))
+          num_lines = sum(1 for line in open('school_prompt.txt'))
    
    
   
@@ -35,8 +35,8 @@ programe:-
       
       
       f = open('school_prompt.txt', 'r')
-beginning_chars = f.read(30)
-print(beginning_chars)
+          beginning_chars = f.read(30)
+      print(beginning_chars)
 
 
 
@@ -45,39 +45,39 @@ print(beginning_chars)
 programe:
     
     
-   three = []
+              three = []
 
-with open('school_prompt.txt', 'r') as f:
-    three = [line.split()[2] for line in f]
-    print(three)
+             with open('school_prompt.txt', 'r') as f:
+             three = [line.split()[2] for line in f]
+             print(three)
     
     
     
     6>Challenge: Create a list called emotions that contains the first word of every line in emotion_words.txt.
     program:-
     
-      fileref = open ("emotion_words.txt","r")
-line = fileref.readlines()
-emotions = []
-for words in line:
-    word = words.split()
-    emotions.append(word[0])
-print (emotions)
+     fileref = open ("emotion_words.txt","r")
+        line = fileref.readlines()
+     emotions = []
+     for words in line:
+         word = words.split()
+     emotions.append(word[0])
+     print (emotions)
 
 
 7>Assign the first 33 characters from the textfile, travel_plans.txt to the variable first_chars.
 
 programe:-
-  f = open('travel_plans.txt', 'r')
-first_chars = f.read(33)
-print(first_chars)
+             f = open('travel_plans.txt', 'r')
+             first_chars = f.read(33)
+             print(first_chars)
 
 8>Challenge: Using the file school_prompt.txt, if the character ‘p’ is in a word, then add the word to a list called p_words.
 
 programe:-
-   fileref = open('school_prompt.txt', 'r')
-words = fileref.read().split()
-p_words = [word for word in words if 'p' in word]
+              fileref = open('school_prompt.txt', 'r')
+              words = fileref.read().split()
+              p_words = [word for word in words if 'p' in word]
 
 
     
